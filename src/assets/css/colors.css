@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    /* Light Mode Background */
+    --color-background-1: #F8FAFC;
+    --color-background-2: #FFFFFF;         /* card */
+    --color-background-3: #E2E8F0;         /* borders/light */
+    --color-background-4: #F1F5F9;         /* muted background if needed */
+    --color-background-5: #CBD5E1;         /* optional */
+
+    /* Dark Mode Background */
+    --color-background-dark-1: #001427;
+    --color-background-dark-2: #0F172A;    /* card */
+    --color-background-dark-3: #1E293B;    /* border */
+    --color-background-dark-4: #0A192F;    /* alternative */
+    --color-background-dark-5: #020c1b;    /* deepest */
+
+    /* Text - Light Mode */
+    --color-text-1: #1E293B;
+    --color-text-2: #334155;
+    --color-text-3: #64748B;
+    --color-text-4: #94A3B8;
+    --color-text-5: #CBD5E1;
+    --color-text-6: #E2E8F0;
+
+    /* Text - Dark Mode */
+    --color-text-dark-1: #F1F5F9;
+    --color-text-dark-2: #E2E8F0;
+    --color-text-dark-3: #CBD5E1;
+    --color-text-dark-4: #94A3B8;
+    --color-text-dark-5: #64748B;
+    --color-text-dark-6: #475569;
+
+    /* Border */
+    --color-border-light: #E2E8F0;
+    --color-border-dark: #1E293B;
+
+    /* Optional States */
+    --color-error-1: #EF4444;
+    --color-success-1: #10B981;
+    --color-warning-1: #F59E0B;
+
+
+    /* Typography Sizes */
+    --text-tiny: 0.625rem;
+    --text-xtiny: 0.5rem;
+
+    /* Shadows */
+    --shadow-select-box: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
