@@ -42,27 +42,27 @@ export const usePersonInformationStore = defineStore('personInformation', {
                 socialMedias: [
                     {
                         title: 'instagram',
-                        icon: './src/assets/icons/instagram.svg',
+                        icon: 'assets/icons/instagram.svg',
                         link: 'https://instagram.com/ali._.nsr_s'
                     },
                     {
                         title: 'github',
-                        icon: './src/assets/icons/githubLight.svg',
+                        icon: 'assets/icons/githubLight.svg',
                         link: 'https://github.com/alinsrs'
                     },
                     {
                         title: 'linkedin',
-                        icon: './src/assets/icons/linkedin.svg',
+                        icon: 'assets/icons/linkedin.svg',
                         link: 'https://linkedin.com/in/alinsrs'
                     },
                     {
                         title: 'telegram',
-                        icon: './src/assets/icons/telegram.svg',
+                        icon: 'assets/icons/telegram.svg',
                         link: 'https://t.me/ali_sss_ali'
                     },
                     {
                         title: 'whatsapp',
-                        icon: './src/assets/icons/whatsapp.svg',
+                        icon: 'assets/icons/whatsapp.svg',
                         link: 'https://wa.me/989144787269'
                     },
                 ],
@@ -303,27 +303,27 @@ export const usePersonInformationStore = defineStore('personInformation', {
                 socialMedias: [
                     {
                         title: 'instagram',
-                        icon: './src/assets/icons/instagram.svg',
+                        icon: 'assets/icons/instagram.svg',
                         link: 'https://instagram.com/ali._.nsr_s'
                     },
                     {
                         title: 'github',
-                        icon: './src/assets/icons/githubLight.svg',
+                        icon: 'assets/icons/githubLight.svg',
                         link: 'https://github.com/alinsrs'
                     },
                     {
                         title: 'linkedin',
-                        icon: './src/assets/icons/linkedin.svg',
+                        icon: 'assets/icons/linkedin.svg',
                         link: 'https://linkedin.com/in/alinsrs'
                     },
                     {
                         title: 'telegram',
-                        icon: './src/assets/icons/telegram.svg',
+                        icon: 'assets/icons/telegram.svg',
                         link: 'https://t.me/ali_sss_ali'
                     },
                     {
                         title: 'whatsapp',
-                        icon: './src/assets/icons/whatsapp.svg',
+                        icon: 'assets/icons/whatsapp.svg',
                         link: 'https://wa.me/989144787269'
                     },
                 ],
