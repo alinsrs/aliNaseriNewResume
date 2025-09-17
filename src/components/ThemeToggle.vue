@@ -10,7 +10,9 @@
 <script setup>
 import {ref, onMounted} from 'vue';
 
-const isDark = ref(false);
+import {useDarkMode} from "../composables/useDarkMode.js";
+
+const { isDark } = useDarkMode();
 
 onMounted(() => {
   // Check localStorage or fallback to system preference

@@ -1,6 +1,7 @@
 <script setup>
-import {ref} from 'vue'
+import {computed, ref} from 'vue'
 import ThemeToggle from './ThemeToggle.vue'
+import {useDarkMode} from "../composables/useDarkMode.js";
 import LanguageToggle from "./LanguageToggle.vue";
 
 const isMobileMenuOpen = ref(false)
@@ -10,6 +11,10 @@ const toggleMobileMenu = () => {
 }
 
 const props = defineProps(["info"])
+
+const { isDark } = useDarkMode();
+
+const strokeColor = computed(() => isDark.value ? '#F8FAFC' : '#001427')
 
 </script>
 
@@ -21,7 +26,7 @@ const props = defineProps(["info"])
     <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
       <!-- Logo or Name -->
       <div class="text-xl font-bold text-text-1 dark:text-text-dark-1 transition-colors duration-[0s]">
-        {{info.name}}
+        {{ info.name }}
       </div>
 
       <!-- Desktop Nav -->
@@ -30,7 +35,7 @@ const props = defineProps(["info"])
           {{ item.title }}
         </a>
         <ThemeToggle/>
-        <LanguageToggle />
+        <LanguageToggle/>
 
 
       </nav>
@@ -43,7 +48,7 @@ const props = defineProps(["info"])
             class="w-6 h-6"
             fill="none"
             viewBox="0 0 24 24"
-            stroke="white"
+            :stroke="strokeColor"
         >
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M4 6h16M4 12h16M4 18h16"/>
@@ -54,7 +59,7 @@ const props = defineProps(["info"])
             class="w-6 h-6"
             fill="none"
             viewBox="0 0 24 24"
-            stroke="currentColor"
+            :stroke="strokeColor"
         >
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M6 18L18 6M6 6l12 12"/>
@@ -75,7 +80,7 @@ const props = defineProps(["info"])
         {{ item.title }}
       </a>
       <ThemeToggle/>
-      <LanguageToggle />
+      <LanguageToggle/>
 
 
     </div>
