@@ -1,7 +1,7 @@
 // src/composables/useLanguage.js
 import { ref, watchEffect } from 'vue'
 
-const currentLanguage = ref(localStorage.getItem('language') || 'en')
+const currentLanguage = ref(localStorage.getItem('language') || 'fa')
 
 // اجرای فوری تغییرات روی DOM و ذخیره
 watchEffect(() => {
@@ -14,7 +14,7 @@ watchEffect(() => {
 // تابع اصلی
 export function useLanguage() {
     function toggleLanguage() {
-        currentLanguage.value = currentLanguage.value === 'en' ? 'fa' : 'en'
+        currentLanguage.value = currentLanguage.value === 'fa' ? 'en' : 'fa'
     }
 
     return { currentLanguage, toggleLanguage }
